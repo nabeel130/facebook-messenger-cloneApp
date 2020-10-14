@@ -51,11 +51,10 @@ function App() {
       <h1>Hello react lovers..</h1>
       <h2>Welcome {username}</h2>
       <form className="app__form">
-       <FormControl>
-         <InputLabel >Enter a message...</InputLabel>
-         <Input  value={input} onChange={event => setInput(event.target.value)}/>
-
-         <IconButton disabled={!input} variant="contained" color="primary" type='submit' onClick={sendMessage}>
+       <FormControl className="app__formControl">
+         {/* <InputLabel >Enter a message...</InputLabel> */}
+         <Input className="app__input" placeholder="Enter a message here..." value={input} onChange={event => setInput(event.target.value)}/>
+         <IconButton className="app__iconButton" disabled={!input} variant="contained" color="primary" type='submit' onClick={sendMessage}>
            <SendIcon />
          </IconButton>
        </FormControl>  
