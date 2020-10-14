@@ -73,3 +73,7 @@ function App() {
 }
 
 export default App;
+
+
+//deploy on FIREBASE 
+// -> firebase init -> npm run build -> firebase deploy
